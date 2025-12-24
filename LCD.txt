@@ -1,0 +1,51 @@
+#include <Arduino.h>
+#include <________.h>
+
+String LCDText0 = "_______";
+String LCDText1 = "_______";
+
+
+LiquidCrystal_I2C lcd(0x27, 16, 2); // 0x27 or 0x3F
+
+long ________();
+
+void LcdInit()
+{
+    lcd.init();
+    lcd.display();
+    lcd.backlight();
+    lcd.clear();
+    lcd.noBacklight();
+    lcd.backlight();
+    
+}
+
+void LcdShowLight()
+{
+    lcd.backlight();
+}
+
+void LcdNoLight()
+{
+    lcd.noBacklight();
+}
+void LcdDisplayLDR()
+{
+  ____
+  ____
+  ____    
+}
+
+void LcdDisplay()
+{
+        lcd.clear();      
+        lcd.setCursor(0, 0);
+        lcd.print(LCDText0);
+        lcd.setCursor(0, 1);
+        lcd.print(LCDText1);
+}
+
+void LcdDisplayDHT()
+{
+
+}
